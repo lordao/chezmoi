@@ -7,7 +7,7 @@ set splitbelow
 set splitright
 set undofile
 
-if $USER == "root"
+if $USER == "root" || empty($XDG_CURRENT_DESKTOP)
   set background=dark
   colorscheme dracula
 else
