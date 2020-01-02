@@ -16,6 +16,9 @@ Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
 " Fuzzy file finder
 if !executable('fzf')
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -33,4 +36,5 @@ Plug 'dracula/vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'freeo/vim-kalisi'
 Plug 'iCyMind/NeoSolarized'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()

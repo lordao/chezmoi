@@ -9,3 +9,6 @@ nnoremap <silent> <leader>m :bnext<cr>
 
 nnoremap <silent> <leader>cd :lcd %:p:h<cr>:pwd<cr>
 nnoremap <silent> <leader>lcd :lcd %:p:h<cr>:pwd<cr>
+
+nnoremap <silent> <leader>fg :NERDTreeToggleVCS<cr>
+nnoremap <silent> <leader>f :NERDTreeToggle<cr>
