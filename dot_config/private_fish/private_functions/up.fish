@@ -1,5 +1,9 @@
 function up
     set cur_dir (pwd)
+    if test -z $argv[1]
+        cd ..
+        return
+    end
     if test $argv[1] = "git"
         while ! test -d .git
             root-backtrack; or break
