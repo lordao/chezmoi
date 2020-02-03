@@ -24,3 +24,7 @@ vnoremap <silent> <C-v> "+p
 nnoremap <silent> <C-c> "+y
 nnoremap <silent> <C-x> "+d
 nnoremap <silent> <C-v> "+p
+
+inoremap <silent> <C-c> <Esc>"+ya
+inoremap <silent> <C-x> <Esc>"+da
+inoremap <silent> <C-v> <Esc>"+pa
