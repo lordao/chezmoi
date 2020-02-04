@@ -1,5 +1,5 @@
 set myPaths ~/.local/bin ~/.npm-global/bin ~/Android/Sdk/tools
-for path in $myPath
+for path in $myPaths
     if not contains $path $PATH
         set -gx PATH $path $PATH
     end
