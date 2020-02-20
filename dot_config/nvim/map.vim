@@ -16,7 +16,7 @@ nnoremap <silent> <leader>f :NERDTreeToggle<cr>
 
 " }}}
 
-" Copy/paste with system's clipboard on Ctrl shortcuts
+" {{{ Copy/paste with system's clipboard on Ctrl shortcuts
 vnoremap <silent> <C-c> "+y
 vnoremap <silent> <C-x> "+d
 vnoremap <silent> <C-v> "+p
@@ -28,3 +28,6 @@ nnoremap <silent> <C-v> "+p
 inoremap <silent> <C-c> <Esc>"+ya
 inoremap <silent> <C-x> <Esc>"+da
 inoremap <silent> <C-v> <Esc>"+pa
+" }}}
+
+nnoremap <silent> U :UndotreeToggle<cr>
