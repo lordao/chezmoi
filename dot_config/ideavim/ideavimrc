@@ -30,6 +30,7 @@ nnoremap <silent> <leader>n :action PreviousTab<cr>
 nnoremap <silent> <leader>m :action NextTab<cr>
 nnoremap <silent> <leader>fa :action FindUsages<cr>
 nnoremap <silent> <leader>fi :action FindUsagesInFile<cr>
+nnoremap <silent> <leader>/ :nohlsearch<cr>
 
 nnoremap <leader>vv :e ~/.config/ideavim/ideavimrc<cr>
 nnoremap <leader>vr :source ~/.config/ideavim/ideavimrc<cr>
