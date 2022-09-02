@@ -1,7 +1,9 @@
 local fn = vim.fn
-local install_path = fn.stdpath("data").."/site/pack/packer/start/packer.nvim"
+local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
+local packer_bootstrap = nil
 if fn.empty(fn.glob(install_path)) > 0 then
-    packer_bootstrap = fn.system({"git", "clone", "--depth", "1", "https://github.com/wbthomason/packer.nvim", install_path})
+    packer_bootstrap = fn.system({ "git", "clone", "--depth", "1",
+        "https://github.com/wbthomason/packer.nvim", install_path })
 end
 
 vim.cmd([[
@@ -31,7 +33,7 @@ return require("packer").startup(function(use)
             opt = true
         },
         config = function()
-            require("lualine").setup{
+            require("lualine").setup {
                 options = {
                     theme = "solarized_light"
                 }
@@ -41,10 +43,10 @@ return require("packer").startup(function(use)
 
     use {
         "akinsho/bufferline.nvim",
-        tag="v2.*",
+        tag = "v2.*",
         requires = "kyazdani42/nvim-web-devicons",
         config = function()
-            require("bufferline").setup{
+            require("bufferline").setup {
                 options = {
                     separator_style = "slant"
                 }
@@ -57,7 +59,7 @@ return require("packer").startup(function(use)
     use {
         "goolord/alpha-nvim",
         requires = { "kyazdani42/nvim-web-devicons" },
-        config = function ()
+        config = function()
             require("alpha").setup(require("alpha.themes.dashboard").config)
         end
     }
