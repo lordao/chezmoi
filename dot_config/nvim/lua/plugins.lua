@@ -76,7 +76,14 @@ return require("packer").startup(function(use)
             "neovim/nvim-lspconfig",
             {
                 "nvim-treesitter/nvim-treesitter",
-                run = ":TSUpdate"
+                run = ":TSUpdate",
+                config = function()
+                    require("nvim-treesitter.configs").setup {
+                        highlight = {
+                            enable = true,
+                        },
+                    }
+                end
             },
             "nvim-treesitter/nvim-treesitter-refactor"
         },
