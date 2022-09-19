@@ -7,6 +7,8 @@ map.n("<leader>/", "<cmd>nohlsearch<cr>")
 
 map.n("<leader>.", "<cmd>lcd %:p:h<cr><cmd>pwd<cr>")
 
+map.n("<C-p>", "<cmd>FZF<cr>")
+
 -- Clipboard {{{
 map.nv("<C-x>", "\"+d")
 map.nv("<C-c>", "\"+y")

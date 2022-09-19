@@ -19,14 +19,6 @@ return require("packer").startup(function(use)
     use "lewis6991/impatient.nvim"
 
     use {
-        "overcache/NeoSolarized",
-        config = function()
-            vim.opt.background = "light"
-            vim.cmd("colorscheme NeoSolarized")
-        end
-    }
-
-    use {
         "nvim-lualine/lualine.nvim",
         requires = {
             "kyazdani42/nvim-web-devicons",
@@ -65,8 +57,6 @@ return require("packer").startup(function(use)
         end
     }
 
-    use "tpope/vim-surround"
-
     use {
         "ray-x/navigator.lua",
         requires = {
@@ -99,6 +89,20 @@ return require("packer").startup(function(use)
             require("config.indent").rainbow()
         end
     }
+
+    --{{{ VimL plugins
+    use {
+        "overcache/NeoSolarized",
+        config = function()
+            vim.opt.background = "light"
+            vim.cmd("colorscheme NeoSolarized")
+        end
+    }
+
+    use "tpope/vim-surround"
+
+    use "junegunn/fzf.vim"
+    --}}}
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
