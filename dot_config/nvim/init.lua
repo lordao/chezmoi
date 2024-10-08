@@ -1,7 +1,6 @@
 require("globals")
 if not vim.g.is_vscode then
-    require("impatient")
-    require("plugins")
+    require("config.lazy")
 end
 if vim.g.is_wsl then
     require("wsl")

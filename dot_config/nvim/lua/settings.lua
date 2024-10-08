@@ -1,31 +1,25 @@
 vim.g.mapleader = ","
+vim.opt.mouse = "nv"
 
-local v = vim.opt
-v.mouse = "nv"
+vim.opt.undofile = true
 
-v.undofile = true
+vim.opt.incsearch = true
+vim.opt.hlsearch = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
-v.incsearch = true
-v.hlsearch = true
-v.ignorecase = true
-v.smartcase = true
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
 
-v.expandtab = true
-v.shiftwidth = 4
-v.softtabstop = 4
+vim.opt.number = true
+vim.opt.numberwidth = 3
+vim.opt.signcolumn = "yes"
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.foldmethod = "marker"
 
-v.number = true
-v.numberwidth = 3
-v.signcolumn = "yes"
-v.splitbelow = true
-v.splitright = true
-v.foldmethod = "marker"
-
-v.termguicolors = true
-v.list = true
-v.listchars:append("trail:⋅")
-
---[[
-v.listchars:append("eol:↴")
-v.listchars:append("space:⋅")
---]]
+vim.opt.termguicolors = true
+vim.opt.list = true
+vim.opt.listchars:append("eol:↴")
+vim.opt.listchars:append("trail:⋅")
